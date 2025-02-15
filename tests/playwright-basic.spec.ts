@@ -20,7 +20,7 @@ test('locator syntax rules',async ({page})=>{
     page.locator('[type="email"]')
 
     // by class value full
-    page.locator('[class="input-full-width size-medium status-basic shape-rectangle nb-transition"')
+    page.locator('[class="input-full-width size-medium status-basic shape-rectangle nb-transition"]')
 
     // combine different selector
     page.locator('input[type="email"][nbinput]')
