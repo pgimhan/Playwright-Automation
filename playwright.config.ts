@@ -40,7 +40,7 @@ export default defineConfig({
     trace: 'on-first-retry',
 
     // actionTimeout:5000,
-    navigationTimeout:5000
+    //navigationTimeout:5000
   },
 
   /* Configure projects for major browsers */
