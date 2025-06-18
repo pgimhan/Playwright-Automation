@@ -158,3 +158,14 @@ test('web table',async({page})=>{
         
     }
 })
+
+test('date picker',async({page})=>{
+   await page.getByText('Forms').click()
+   await page.getByText('Datepicker').click()
+
+   const calanderInput = page.getByPlaceholder('Form Picker')
+   await calanderInput.click()
+   await page.locator('[class="day-cell ng-star-inserted"]').getByText('14',{exact:true}).click()
+   await expect(calanderInput).toHaveValue('Jun 14, 2025')
+
+})
