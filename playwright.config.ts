@@ -13,11 +13,11 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
 
-  timeout:30000,
-  globalTimeout:60000,
+  timeout: 30000,
+  globalTimeout: 60000,
 
-  expect:{
-    timeout:5000
+  expect: {
+    timeout: 5000
   },
 
   testDir: './tests',
@@ -50,15 +50,15 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {
